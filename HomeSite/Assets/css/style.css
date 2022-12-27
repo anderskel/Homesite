@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #666;
+  }
+  
+  nav ul {
+    background-color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #444;
+  }
+  @media (max-width: 600px) {
+    /* Règles de style qui s'appliquent seulement si la largeur de l'écran est inférieure à 600px */
+    body {
+      font-size: 14px;
+    }
+    nav ul {
+      display: none;
+    }
+    nav select {
+      /* Règles de style pour un menu déroulant qui apparaît seulement sur les petits écrans */
+      display: block;
+    }
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+    text-align: center;
+  }
+  
+  footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  footer nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer nav a:hover {
+    text-decoration: underline;
+  }
+  <form action="/traitement-inscription-newsletter" method="post">
+  <label for="email">Votre adresse e-mail :</label>
+  <input type="email" name="email" placeholder="Entrez votre adresse e-mail">
+  <button type="submit">S'inscrire</button>
+</form>
+img {
+  border: 10px solid #333;
+  box-shadow: 0 0 10px #ccc;
+}
+.center {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .center {
+    width: 90%;
+  }
+}
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 10px solid #333;
+  box-shadow: 0 0 10px #ccc;
+  display: none;
+}
+
+#popup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#popup form label,
+#popup form input,
+#popup form button {
+  width: 60%;
+  max-width: 300px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#popup form button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+#popup form button:hover {
+  background-color: #444;
+}
